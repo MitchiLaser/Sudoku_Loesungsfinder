@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sudoku - L&ouml;sung</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <!--
+        Autor:
+
+            /|    //| |                                                
+           //|   // | |    ( )  ___     / __      ___      ___     //  
+          // |  //  | |   / / //   ) ) //   ) ) //   ) ) //___) ) //   
+         //  | //   | |  / / //       //   / / //   / / //       //    
+        //   |//    | | / / ((____   //   / / ((___( ( ((____   //     
+
+            //    / /                                                                  
+           //___ / /  ___     / __      ___       __      ___    __  ___  ___     ( )   __    
+          / ___   / //   ) ) //   ) ) //___) ) //   ) ) ((   ) )  / /   //___) ) / / //   ) ) 
+         //    / / //   / / //   / / //       //   / /   \ \     / /   //       / / //   / /   
+        //    / / ((___/ / //   / / ((____   //   / / //   ) )  / /   ((____   / / //   / /  
+        -->
+    </head>
+    <body>
+        <div id="Inhalt">
+            <header>Sudoku - L&ouml;sungsfinder</header>
+            <div id="Eingabe">
+                <h1>Geben Sie die Werte ein, die ihnen bekannt sind ...</h1>
+                <table id="Tabelle"></table>
+            </div>
+            <div id="ErgebnisBerechnen">
+                <h1>... und lassen Sie sich die Felder berechnen</h1>
+                <p class="ButtonZeile"><input type="button" value="Ergebnis Berechnen" id="ErgebnisBerechnenButton" onclick="ErgebnisBerechnen()"></p>
+            </div>
+            <div id="Fehlermeldung">
+                <h1>... und Sie erhalten eine <b>Fehlermeldung</b></h1>
+                <ul id="FehlermeldungAusgabezeile"></ul>
+                <p>Beseitigen Sie die Fehler und lassen sie sich das Ergebnis erneut berechnen</p>
+                <p class="ButtonZeile"><input type="button" value="Ergebnis Berechnen" id="ErgebnisBerechnenButton2" onclick="ErgebnisBerechnen()"></p>
+            </div>
+            <div id="Ausgabe">
+                <h1>... und sie kommen der L&ouml;sung einen großen schritt n&auml;her</h1>
+                <table id="Ausgabetabelle"></table>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <footer>Wir k&ouml;nnen nicht garantieren, dass die Lösung richtig ist, Sie benutzen dieses Hilfsmittel <b>auf eigene Gefahr</b></footer>
+    </body>
+</html>
